@@ -44,10 +44,10 @@ Micro-Project 3 models to be checked against.
 
 Earnings in the 1994 United States workforce were distributed unevenly across demographic
 and employment characteristics. This project describes which recorded personal and
-employment attributes are associated with earning above 50,000 dollars per year.
+employment attributes are associated with earning above $50,000 per year.
 
 ## Hypothesis
 
 Educational attainment and weekly hours worked are the dominant correlates of exceeding
-50,000 dollars in annual income, with occupation category and marital status contributing
+$50,000 in annual income, with occupation category and marital status contributing
 additional explanatory signal beyond those two variables.
