@@ -32,7 +32,7 @@ exact-duplicate rows, dropped the redundant `education` text column and the non-
 
 ## Micro-Project 2: Analyze and Report
 
-[View the Micro-Project 2 notebook](MicroProject2_AdultIncome/Jesus_Alvarado_ANA500_MicroProject2_AdultIncome.ipynb)
+[View the Micro-Project 2 notebook](Jesus_Alvarado_ANA500_MicroProject2_AdultIncome.ipynb)
 
 Nine Matplotlib/Seaborn figures examining the Micro-Project 1 hypothesis (education and
 hours as dominant correlates of income, with occupation and marital status contributing
@@ -42,7 +42,7 @@ Micro-Project 3 models to be checked against.
 
 ## Micro-Project 3: Analyze, Report, and Act
 
-[View the Micro-Project 3 notebook](MicroProject3_AdultIncome/Jesus_Alvarado_ANA500_MicroProject3_AdultIncome.ipynb)
+[View the Micro-Project 3 notebook](Jesus_Alvarado_ANA500_MicroProject3_AdultIncome.ipynb)
 
 Fitted the named regression methods (linear regression, linear SVR) on the binary target
 to document where they break (22.1% and 40.9% of predictions outside [0, 1]), then
