@@ -22,7 +22,7 @@ Kohavi, R. (1996). *Adult* [Dataset]. UCI Machine Learning Repository.
 
 ## Micro-Project 1: Acquire and Prepare
 
-[View the Micro-Project 1 notebook](MicroProject1_AdultIncome/Jesus_Alvarado_ANA500_MicroProject1_AdultIncome.ipynb)
+[View the Micro-Project 1 notebook](Jesus_Alvarado_ANA500_MicroProject1_AdultIncome.ipynb)
 
 Loaded and merged the raw UCI extract, then cleaned it with NumPy and Pandas: recoded
 structural missingness to an explicit `Unknown` level rather than dropping it, removed 52
