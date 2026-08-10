@@ -11,14 +11,14 @@ specification.
 |---|---|---|---|
 | 1 | NumPy and Pandas: organize, clean, prepare | Step 2, Prepare | Complete |
 | 2 | Visualization (Matplotlib, Seaborn) | Step 4, Report | Complete |
-| 3 | Regression (linear, SVM) | Step 5, Act | Pending |
+| 3 | Regression (linear, SVM) | Step 5, Act | Complete |
 | 4 | Deep learning regression on time-series (RNN) | Step 5, Act | Pending |
 
 ## Dataset
 
 Adult / Census Income, UCI Machine Learning Repository, dataset ID 2. Becker, B. and
 Kohavi, R. (1996). *Adult* [Dataset]. UCI Machine Learning Repository.
-https://doi.org/10.24432/C5XW20. Licensed CC BY 4.0.
+[https://doi.org/10.24432/C5XW20](https://doi.org/10.24432/C5XW20). Licensed CC BY 4.0.
 
 ## Micro-Project 1: Acquire and Prepare
 
@@ -40,6 +40,20 @@ additional signal). Confirmed the named variables, surfaced two additions the hy
 did not name (age, capital-gain participation), and flagged sex/race disparities for the
 Micro-Project 3 models to be checked against.
 
+## Micro-Project 3: Analyze, Report, and Act
+
+[View the Micro-Project 3 notebook](MicroProject3_AdultIncome/Jesus_Alvarado_ANA500_MicroProject3_AdultIncome.ipynb)
+
+Fitted the named regression methods (linear regression, linear SVR) on the binary target
+to document where they break (22.1% and 40.9% of predictions outside [0, 1]), then
+compared them against logistic regression and SVM classifiers on the same held-out test
+set. Incorporated instructor feedback from Micro-Project 2: marital status recoded to a
+Married/Not-Married binary, age reduced to three groups, and the class imbalance
+corrected with class weights (recall on the >50K class 0.59 to 0.84). Final model:
+balanced logistic regression (AUC 0.905). Hypothesis verdict: partially supported and
+refined, with marriage emerging as the largest broad demographic effect. Group-level
+error rates documented by sex and race.
+
 ## Problem statement
 
 Earnings in the 1994 United States workforce were distributed unevenly across demographic
@@ -51,3 +65,20 @@ employment attributes are associated with earning above $50,000 per year.
 Educational attainment and weekly hours worked are the dominant correlates of exceeding
 $50,000 in annual income, with occupation category and marital status contributing
 additional explanatory signal beyond those two variables.
+
+## Findings
+
+Tested by the Micro-Project 3 models: partially supported and refined.
+
+Confirmed as stated: education and hours worked are strong correlates of exceeding
+$50,000, and both survive controlling for every other variable in the model.
+
+Wrong as stated: marital status was named secondary, but its coefficient is the largest
+of the broad demographic effects, above a full standard deviation of education. Capital-
+gain participation, not named at all in the original hypothesis, carries the single
+largest coefficient overall, though only 8.3% of the sample has any capital gain.
+
+**Refined hypothesis:** being married with a spouse present, education, and hours worked
+are the dominant broad correlates of exceeding $50,000. Capital-gain participation is a
+narrow but nearly decisive marker for the few who have it, and occupation contributes
+additional signal.
